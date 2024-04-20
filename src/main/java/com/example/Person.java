@@ -12,7 +12,7 @@ public class Person
     private final String emailAddress;
     private final String phoneNumber;
 
-    public Person(PersonBuilder personBuilder) {
+    private Person(PersonBuilder personBuilder) {
         this.firstName = personBuilder.firstName;
         this.middleName = personBuilder.middleName;
         this.lastName = personBuilder.lastName;

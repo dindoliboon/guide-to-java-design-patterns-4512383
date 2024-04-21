@@ -4,7 +4,6 @@ public class Store {
 
     private static final VendingMachine VENDING_MACHINE = new VendingMachine();
 
-
     public static void main(String[] args) {
         buySnack("ChocolateBar");
         buySnack("Chips");

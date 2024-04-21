@@ -17,13 +17,17 @@ public class Pizza extends Meal {
         this.flavor = flavor;
     }
 
-
     @Override
     public String toString() {
         return "Pizza{" +
                 "price='" + super.getPrice() + '\'' +
                 "flavor='" + flavor + '\'' +
                 '}';
+    }
+
+    @Override
+    public Pizza clone() {
+        return new Pizza(this.getPrice(), this.getFlavor());
     }
 
 }

@@ -17,13 +17,17 @@ public class Building extends Graphic {
         this.buildingType = buildingType;
     }
 
-
     @Override
     public String toString() {
         return "Building{" +
                 "height in pixels='" + super.getHeightInPixels() + '\'' +
                 "building type='" + buildingType + '\'' +
                 '}';
+    }
+
+    @Override
+    public Building clone() {
+        return new Building(this.getHeightInPixels(), new BuildingType(this.getBuildingType().getType()));
     }
 
 }

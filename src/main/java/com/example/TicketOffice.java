@@ -8,6 +8,7 @@ public class TicketOffice {
     public static void main(String[] args) {
         buyABusTicket();
         buyATrainTicket();
+        buyACarTicket();
     }
 
     private static void buyABusTicket() {
@@ -18,6 +19,11 @@ public class TicketOffice {
     private static void buyATrainTicket() {
         var ticket = ticketMachine.createTicket("Train");
         System.out.println("One train ticket purchased. The price is $" + ticket.getPrice() + ".");
+    }
+
+    private static void buyACarTicket() {
+        var ticket = ticketMachine.createTicket("Car");
+        System.out.println("One car ticket purchased. The price is $" + ticket.getPrice() + ".");
     }
 
 }

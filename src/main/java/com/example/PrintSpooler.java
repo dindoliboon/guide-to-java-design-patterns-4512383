@@ -1,18 +1,15 @@
 package com.example;
 
-public final class PrintSpooler {
+public enum PrintSpooler {
 
-    private static PrintSpooler INSTANCE;
+    INSTANCE;
 
-    private PrintSpooler() {}
-
-    public static PrintSpooler getInstance() {
-        if (INSTANCE == null) {
-            INSTANCE = new PrintSpooler();
-        }
-        return INSTANCE;
+    private PrintSpooler() {
     }
 
+    public static PrintSpooler getInstance() {
+        return INSTANCE;
+    }
 
     void print() {
         System.out.println("Printing...");

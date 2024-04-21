@@ -12,7 +12,7 @@ public class OrderTracker {
         Pizza hawaiianPizza3 = hawaiianPizza1.clone();
         Pizza hawaiianPizza4 = hawaiianPizza1.clone();
         Pizza hawaiianPizza5 = hawaiianPizza1.clone();
-
+        hawaiian.setName("Hawaiian with extra cheese");
 
         PizzaFlavor pepperoni = new PizzaFlavor("Pepperoni");
         Pizza pepperoniPizza1 = new Pizza(5, pepperoni);
@@ -29,7 +29,7 @@ public class OrderTracker {
     }
 
     private static void placeOrder(List<Meal> meals) {
-        System.out.println("Order placed: " );
+        System.out.println("Order placed: ");
         meals.forEach(System.out::println);
     }
 
